@@ -1,0 +1,228 @@
+/* Reset dasar */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Toolbar */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 8px;
+    display: flex;
+    gap: 8px;
+}
+
+header button {
+    background: #3498db;
+    border: none;
+    padding: 6px 12px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+header button:hover {
+    background: #2980b9;
+}
+
+/* Layout utama */
+main {
+    display: flex;
+    height: calc(100% - 50px);
+}
+
+/* Area mind map */
+#mindmap {
+    flex: 2;
+    background: #f4f6f8;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Panel editor */
+#editorPanel {
+    flex: 1;
+    border-left: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#nodeTitle {
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#editor {
+    flex: 1;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* Node mind map */
+.node circle {
+    fill: #3498db;
+    stroke: #1f618d;
+    stroke-width: 2px;
+    cursor: pointer;
+}
+
+.node text {
+    font-size: 12px;
+    fill: #2c3e50;
+}
+
+.link {
+    fill: none;
+    stroke: #95a5a6;
+    stroke-width: 2px;
+}
+
+/* Node terpilih */
+.node.selected circle {
+    fill: #e67e22;
+    stroke: #d35400;
+    stroke-width: 3px;
+}
+
+/* Grup tombol editor */
+.editor-buttons {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.editor-buttons button {
+    flex: 1;
+    background: #27ae60;
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.editor-buttons button:hover {
+    background: #1e8449;
+}
+
+.editor-buttons button:nth-child(2) {
+    background: #2980b9;
+}
+
+.editor-buttons button:nth-child(2):hover {
+    background: #21618c;
+}
+
+.editor-buttons button:nth-child(3) {
+    background: #c0392b;
+}
+
+.editor-buttons button:nth-child(3):hover {
+    background: #922b21;
+}
+
+header input[type="text"] {
+    margin-left: auto;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+
+
+
+.node.collapsed circle {
+    fill: #bdc3c7;
+    stroke: #7f8c8d;
+}
+
+
+.node circle {
+    fill: #3498db;
+    stroke: #1f618d;
+    stroke-width: 2px;
+    cursor: pointer;
+    transition: stroke 0.2s, stroke-width 0.2s;
+}
+
+.node.drag-target circle {
+    stroke: #e74c3c !important;
+    stroke-width: 3px !important;
+}
+
+/* style.css */
+
+/* Tambahkan gaya ini untuk menyorot hasil pencarian */
+.node.search-match {
+    /* Gunakan filter untuk efek 'glow' yang tidak mengganggu stroke lain */
+    filter: drop-shadow(0 0 7px rgba(46, 204, 113, 0.9)); /* Glow hijau cerah */
+    transition: filter 0.3s ease-in-out;
+}
+
+.node.search-match {
+    filter: drop-shadow(0 0 7px rgba(255, 0, 0, 0.9)); /* Glow merah menyala */
+    transition: filter 0.3s ease-in-out;
+}
+
+
+/* Anda juga bisa menambahkan outline, tapi 'filter' seringkali terlihat lebih baik */
+/*
+.node.search-match circle {
+    stroke: #2ecc71;
+    stroke-width: 4px;
+}
+*/
+
+@keyframes pulse-glow {
+  0%, 100% {
+    filter:
+      drop-shadow(0 0 3px rgba(255, 255, 0, 1))
+      drop-shadow(0 0 6px rgba(255, 0, 0, 0.8))
+      drop-shadow(0 0 12px rgba(255, 0, 0, 0.5));
+  }
+  50% {
+    filter:
+      drop-shadow(0 0 4px rgba(255, 255, 0, 1))
+      drop-shadow(0 0 8px rgba(255, 0, 0, 0.9))
+      drop-shadow(0 0 16px rgba(255, 0, 0, 0.6));
+  }
+}
+
+.node.search-match {
+  animation: pulse-glow 2s infinite;
+}
+
+
+/* style.css */
+
+/* Gaya untuk tombol Save As saat ada perubahan belum disimpan */
+button.unsaved {
+    background-color: red; /* Warna oranye */
+    color: white;
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(230, 126, 34, 0.7);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px 10px rgba(230, 126, 34, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(230, 126, 34, 0);
+    }
+}

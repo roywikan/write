@@ -1,0 +1,38 @@
+{
+  "title": "Topik Utama",
+  "content": "Ini adalah paragraf pembuka untuk topik utama mind map ini.",
+  "children": [
+    {
+      "title": "Bab 1 - Pendahuluan",
+      "content": "Paragraf penjelasan tentang bab pendahuluan. Anda bisa menulis panjang di sini, termasuk detail penting.",
+      "children": [
+        {
+          "title": "Subbab 1.1 - Latar Belakang",
+          "content": "Paragraf yang menjelaskan latar belakang permasalahan atau topik."
+        },
+        {
+          "title": "Subbab 1.2 - Tujuan",
+          "content": "Paragraf yang menjelaskan tujuan dari pembahasan atau penelitian."
+        }
+      ]
+    },
+    {
+      "title": "Bab 2 - Pembahasan",
+      "content": "Paragraf yang menjelaskan inti dari pembahasan.",
+      "children": [
+        {
+          "title": "Subbab 2.1 - Analisis",
+          "content": "Paragraf yang berisi analisis mendalam mengenai topik."
+        },
+        {
+          "title": "Subbab 2.2 - Studi Kasus",
+          "content": "Paragraf yang menjelaskan studi kasus terkait."
+        }
+      ]
+    },
+    {
+      "title": "Bab 3 - Kesimpulan",
+      "content": "Paragraf kesimpulan yang merangkum seluruh isi mind map."
+    }
+  ]
+}

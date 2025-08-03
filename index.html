@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Map Editor</title> <!-- Pindahkan ke sini -->
+    
+    <!-- Link ke CSS Anda -->
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button onclick="newMindMap()">New</button>
+        <input type="file" id="fileInput" style="display:none" accept=".json" onchange="openMindMap(event)">
+        <button onclick="document.getElementById('fileInput').click()">Open</button>
+        <button onclick="saveMindMap()">Save</button>
+        <button onclick="saveAsMindMap()">Save As</button>
+        <button onclick="exportOutline('txt')">Export TXT</button>
+        <button onclick="exportOutline('docx')">Export DOCX</button>
+		<span>Writers Mindmapper</span>
+		<input type="text" id="searchInput" placeholder="Search node..." oninput="searchNode()">
+    </header>
+
+    <main>
+        <div id="mindmap"></div>
+		<div id="editorPanel">
+			<input type="text" id="nodeTitle" placeholder="Node Title">
+			<div id="editor"></div>
+			<div class="editor-buttons">
+				<button onclick="updateNodeContent()">Update Node</button>
+				<button onclick="addChildNode()">Add Child</button>
+				<button onclick="deleteNode()">Delete Node</button>
+			</div>
+		</div>
+    </main>
+
+    <!-- PUSTAKA JAVASCRIPT (URUTAN PENTING!) -->
+    <!-- Pindahkan semua script ke sini -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docx@9.5.1/dist/index.iife.min.js"></script>
+    
+    <!-- Script utama Anda (PALING AKHIR, tanpa defer) -->
+    <script src="script.js?v=123"></script>
+
+</body>
+</html>

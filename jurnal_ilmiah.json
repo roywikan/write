@@ -1,0 +1,52 @@
+{
+  "title": "Pengaruh Kafein terhadap Produktivitas (Studi Kasus)",
+  "content": "<p>Jurnal ini meneliti hubungan kausal antara konsumsi kafein harian dengan tingkat produktivitas yang diukur melalui jumlah tugas yang diselesaikan oleh pekerja pengetahuan.</p>",
+  "children": [
+    {
+      "title": "Abstrak",
+      "content": "<p>Penelitian ini bertujuan untuk menganalisis dampak konsumsi kopi sebagai sumber utama kafein terhadap produktivitas kerja. Metode yang digunakan adalah studi observasional pada 20 partisipan selama periode empat minggu. Hasil menunjukkan peningkatan produktivitas rata-rata sebesar 15% pada hari-hari dengan konsumsi kafein, namun juga disertai peningkatan laporan tingkat stres. Kesimpulannya, kafein memiliki efek positif jangka pendek pada volume pekerjaan tetapi mungkin memiliki implikasi negatif pada kesejahteraan.</p>",
+      "children": []
+    },
+    {
+      "title": "1. Pendahuluan",
+      "content": "<p>Produktivitas di tempat kerja merupakan topik yang krusial dalam manajemen modern. Banyak pekerja mengandalkan stimulan seperti kafein untuk menjaga tingkat energi dan fokus. Namun, literatur ilmiah masih memperdebatkan efektivitas dan efek samping jangka panjangnya. Penelitian ini mencoba mengisi celah tersebut dengan data observasional di lingkungan kerja nyata.</p>",
+      "children": []
+    },
+    {
+      "title": "2. Metode Penelitian",
+      "content": "<p>Studi ini menggunakan desain observasional kuantitatif. Partisipan diminta untuk mencatat konsumsi kopi harian dan jumlah tugas yang mereka selesaikan setiap hari melalui aplikasi log. Data dikumpulkan selama 20 hari kerja. Analisis statistik menggunakan uji-t untuk membandingkan rata-rata produktivitas antara hari dengan dan tanpa konsumsi kafein.</p>",
+      "children": [
+        {
+          "title": "2.1. Partisipan",
+          "content": "<p>Sebanyak 20 pekerja pengetahuan dari industri teknologi berpartisipasi secara sukarela. Kriteria inklusi adalah usia 25-40 tahun dan merupakan peminum kopi reguler.</p>",
+          "children": []
+        },
+        {
+          "title": "2.2. Pengumpulan Data",
+          "content": "<p>Data produktivitas diukur sebagai jumlah 'tiket' yang diselesaikan per hari, sementara konsumsi kafein dicatat dalam jumlah cangkir standar.</p>",
+          "children": []
+        }
+      ]
+    },
+    {
+      "title": "3. Hasil",
+      "content": "<p>Analisis data menunjukkan bahwa rata-rata tugas yang diselesaikan pada hari-hari partisipan mengonsumsi kafein adalah 8.2 tugas, secara signifikan lebih tinggi dibandingkan dengan 7.1 tugas pada hari-hari tanpa kafein (p &lt; 0.05). Tidak ada perbedaan signifikan yang ditemukan berdasarkan waktu konsumsi (pagi vs. siang).</p>",
+      "children": []
+    },
+    {
+      "title": "4. Diskusi",
+      "content": "<p>Peningkatan produktivitas yang teramati sejalan dengan penelitian sebelumnya yang menyoroti efek stimulan kafein pada sistem saraf pusat. Namun, perlu dicatat bahwa studi ini tidak mengukur kualitas pekerjaan, hanya kuantitas. Keterbatasan utama adalah sifat observasional dari studi ini, yang tidak dapat membuktikan hubungan sebab-akibat secara definitif.</p>",
+      "children": []
+    },
+    {
+      "title": "5. Kesimpulan",
+      "content": "<p>Kafein terbukti efektif dalam meningkatkan jumlah pekerjaan yang diselesaikan dalam jangka pendek. Organisasi dan individu harus mempertimbangkan manfaat ini terhadap potensi dampak negatif pada stres dan kualitas kerja sebelum mengadopsinya sebagai strategi produktivitas utama.</p>",
+      "children": []
+    },
+    {
+      "title": "Referensi",
+      "content": "<p>1. Smith, J. (2020). <em>The Science of Productivity</em>. Academic Press.<br>2. Doe, A. (2019). Caffeine and Cognitive Performance. <em>Journal of Applied Psychology</em>, 45(2), 112-125.<br>3. Contoh link: Kunjungi <a href=\"https://www.wikipedia.org\" target=\"_blank\">Wikipedia</a> untuk info lebih lanjut.</p>",
+      "children": []
+    }
+  ]
+}
